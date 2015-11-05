@@ -1,0 +1,24 @@
+camera:
+  zoom: 10
+  iso: 0
+scantailor:
+  l: 1.5
+  margins-left: 2.5
+  margins-right: 2.5
+  margins-top: 2.5
+  margins-bottom: 2.5
+  dewarping: auto
+  despeckle: off
+  dpi-x: 300
+  dpi-y: 300
+  threshold: 0
+  color-mode: black_and_white
+tesseract:
+  lang: spa
+  output-format: hocr
+  input-extension: tif
+general-info:
+  name: name
+  description: description
+  output-formats:
+  - pdfbeads

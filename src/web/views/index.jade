@@ -1,0 +1,24 @@
+doctype html
+html
+  include ./layouts/head.jade
+  body
+    include ./layouts/topbar.jade
+
+    main.main-container
+      .container.main-button-container
+        .row
+          .col-md-4.col-md-offset-1.col-sm-4.col-sm-offset-1
+            a(href='/project/new')
+              .box
+                .circle
+                  i.fa.fa-file
+                h3.home-button-text= _('i_scan')
+          .col-md-2.col-sm-2
+          .col-md-4.col-sm-4
+            a(href='/scan')
+              .box
+                .circle
+                  i.fa.fa-folder-open
+                h3.home-button-text= _('i_prev_scan')
+
+    include ./layouts/footer.jade

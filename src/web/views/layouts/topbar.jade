@@ -1,0 +1,40 @@
+nav.navbar.navbar-default.navbar-static-top.custom-navbar.header-navbar
+  .container
+    // Brand and toggle get grouped for better mobile display
+    .navbar-header.page-scroll
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#topbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.primary-font-color.logo(href='/')
+        i.fa.fa-book
+        |  LibreScan
+    #topbar-collapse.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li.dropdown.custom-dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')= _('tb_guides')
+            span.caret
+          ul.dropdown-menu(role='menu')
+            li
+              a(href='#')= _('tb_how_to_scan')
+            li
+              a(href='#')= _('tb_chdk_installation')
+            li
+              a(href='#')= _('tb_set_scanner')
+        li.dropdown.custom-dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')= _('tb_languages')
+            span.caret
+          ul.dropdown-menu(role='menu')
+            li
+              a(href='/language/spa')= _('tb_spanish_lang')
+            li
+              a(href='/language/en')= _('tb_english_lang')
+            li
+              a(href='/language/pt')= _('tb_portuguese_lang')
+            li
+              a(href='/language/gn')= _('tb_guarani_lang')
+        li
+          a(href='/contact')= _('tb_contact_us')
+        li
+          a(href='/about')= _('tb_about_us')

@@ -1,0 +1,221 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+a, a:hover {
+	text-decoration: none !important;
+	cursor: grab;
+}
+
+.clear {
+	clear: both;
+}
+
+.main-container {	
+	background-color: #59323C;
+	margin: 0;
+	border: none;
+	overflow: hidden;
+	width: 100%;
+}
+
+.custom-navbar {
+	background-color: #260126;
+	color: #F2EEB3;
+	margin: 0;
+	border: none;
+}
+
+#signature {
+	margin-top: 10px;
+}
+
+.footer-navbar {
+	color: #F2EEB3;
+	font-size: 1.1em;
+	margin:0;
+	border: none;
+	box-sizing: border-box;
+}
+
+.footer-nav {
+	bottom: 0;
+	color: white;
+	font-size: 1.2em;
+	margin:0;
+	border: none;
+}
+
+#sign {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+footer{
+	margin: 0;
+}
+
+.primary-font-color, #topbar-collapse a {
+	color: #D1C7AB !important;
+	font-size: 1.2em;
+}
+
+.custom-dropdown:visited {
+	background-color: black;
+}
+
+.logo {
+	transition: all 0.5s;
+}
+
+.logo:hover {
+	color: black;
+}
+
+.box {
+	text-align: center;
+	height: 300px;
+	width: 100%;
+	background-color: #BFAF80;
+	padding-top: 30px;
+	-webkit-box-shadow: -1px 0px 17px 4px rgba(38,1,38,0.5);
+	-moz-box-shadow: -1px 0px 17px 4px rgba(38,1,38,0.5);
+	box-shadow: -1px 0px 17px 4px rgba(38,1,38,0.5);
+	margin-bottom: 25px;
+	transition: all 0.6s;
+}
+
+.box:hover {
+	background-color: #EDD99F;
+}
+
+.box:hover .home-button-text {
+	color: #6D3F4B;
+}
+
+.circle {
+	height: 200px;
+	width: 200px;
+	border-radius: 100px;
+	background-color: #8C6954;
+	margin: 0 auto;
+	padding: 20px;
+	font-size: 8em;
+	border: 3px solid #775947;
+}
+
+.fa-folder-open {
+	margin-left: 15px;
+	color: floralwhite;   
+}
+
+.fa-file {
+	color: floralwhite;
+}
+
+.home-button-text {
+	color: #260126;
+	transition: all 0.8s;
+}
+
+.form-h2 {
+	color: #BFAF80;
+	font-weight: bold;
+}
+
+
+.form-label {
+	color: #D1C7AB;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+.goback-button {
+	margin-right: 15px;
+}
+
+.main-button-container {
+	margin-top: 50px;
+}
+
+/*
+========================
+styles for about
+========================    
+*/
+
+.main{
+	display: block;
+	width: 80%;
+	height: 300px;
+	border: 2px #ddd solid;
+	margin: 0 auto;
+	background-color:#BFAF80;
+	color:#000000;
+}
+
+/*
+.vertical-center {
+min-height: 100%;  
+min-height: 100vh;
+display: flex;
+align-items: center;
+}
+*/
+
+.nav-tabs a{
+	color:#260126 !important;
+}
+
+/*Redefinition for tab styles on hover*/
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	color: #FFFFFF !important;
+	cursor: default;
+	background-color: #8C6954;
+	border: 1px solid #DDDDDD;
+	border-bottom-color: transparent;
+}
+
+
+.tab-content{
+	padding: 20px;
+}
+
+/*
+============================
+END of styles for about
+============================    
+*/
+
+
+/*Scroll styles*/
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+/* Track */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(140, 105, 84, 0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(140, 105, 84, 0.4);
+}
+
+
+
+

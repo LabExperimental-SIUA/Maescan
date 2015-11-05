@@ -1,0 +1,16 @@
+#send-mail-btn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    resize: none;
+}
+
+.contact-info-container{
+    color: #D1C7AB;
+}
+
+#contact-h2{
+    margin-bottom: 0;
+}

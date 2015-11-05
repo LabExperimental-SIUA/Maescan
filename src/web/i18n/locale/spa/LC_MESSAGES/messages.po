@@ -1,0 +1,159 @@
+# Spanish translation.
+# MessageId standard
+#           index.jade -> i_ + id
+#           newProject.jade -> np_ + id
+#           aboutUs.jade -> au_ + id
+#           capture.jade -> c_ + id
+#           contactUs.jade -> cu_ + id
+#           outputPewview.jade -> op_ + id
+#           processingPhase.jade -> pp_ + id
+#           topbar.jade -> tb_ + id
+
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+
+# Translations for topbar.jade
+
+msgid "tb_guides"
+msgstr "Guías"
+
+msgid "tb_how_to_scan"
+msgstr "¿Cómo escanear?"
+
+msgid "tb_chdk_installation"
+msgstr "Instalación de CHDK"
+
+msgid "tb_set_scanner"
+msgstr "¿Cómo armar el escaner?"
+
+msgid "tb_languages"
+msgstr "Idiomas"
+
+msgid "tb_spanish_lang"
+msgstr "Español"
+
+msgid "tb_english_lang"
+msgstr "Inglés"
+
+msgid "tb_portuguese_lang"
+msgstr "Portugués"
+
+msgid "tb_guarani_lang"
+msgstr "Guaraní"
+
+msgid "tb_contact_us"
+msgstr "Contacto"
+
+msgid "tb_about_us"
+msgstr "Acerca"
+
+# Translations for index.jade
+
+msgid "i_scan"
+msgstr "Escanear"
+
+msgid "i_prev_scan"
+msgstr "Escaneos anteriores"
+
+# Translations for newProject.jade
+
+msgid "np_new_project"
+msgstr "Nuevo Proyecto"
+
+msgid "np_new_book_name_label"
+msgstr "Nombre del Libro"
+
+msgid "np_new_book_name_label"
+msgstr "Nombre del Libro"
+
+msgid "np_new_book_description_label"
+msgstr "Descripción del Libro"
+
+msgid "np_new_book_language"
+msgstr "Idioma del documento"
+
+msgid "np_new_book_create"
+msgstr "Crear"
+
+msgid "np_new_book_go_back"
+msgstr "Atras"
+
+msgid "np_new_book_config_modal_title"
+msgstr "Configuración avanzada"
+
+msgid "np_new_book_config_parameter_zoom"
+msgstr "Zoom"
+
+msgid "np_new_book_config_apply_button"
+msgstr "Aplicar"
+
+msgid "np_new_book_config_cancel_button"
+msgstr "Cancelar"
+
+# Translations for aboutUs.jade
+
+msgid "au_tab1_label"
+msgstr "Acerca de LibreScan"
+
+msgid "au_tab2_label"
+msgstr "Nuestro Equipo"
+
+msgid "au_tab3_label"
+msgstr "Involúcrate"
+
+msgid "au_tab1_text"
+msgstr "Librescan es una herramienta de software libre creado para facilitar el proceso de escaneo de documentos"
+
+msgid "au_developers"
+msgstr "Desarrolladores"
+
+# Translations for capture.jade
+
+msgid "c_capture"
+msgstr "Capturar "
+
+msgid "c_repeat"
+msgstr "Repetir "
+
+msgid "c_next"
+msgstr "Siguiente"
+
+msgid "c_cancel"
+msgstr "Cancelar"
+
+msgid "c_processing_phase"
+msgstr "Fase de procesamiento"
+
+# Translations for outputPreview.jade
+
+msgid "op_title"
+msgstr "Vista previa"
+
+msgid "op_finish"
+msgstr "Finalizar"
+
+msgid "op_modify_captures"
+msgstr "Modificar capturas"
+
+# Translations for contactUs.jade
+msgid "cu_success_sending"
+msgstr "Exito al enviar correo"
+
+msgid "cu_title"
+msgstr "Contáctenos"
+
+msgid "cu_title_footer"
+msgstr "Estaremos agradecidos de recibir cualquier mensaje o recomendación."
+
+msgid "cu_name_label"
+msgstr "Nombre"
+
+msgid "cu_email_label"
+msgstr "Su correo"
+
+msgid "cu_message_label"
+msgstr "Mensaje"
+
+msgid "cu_send_button"
+msgstr "Enviar"

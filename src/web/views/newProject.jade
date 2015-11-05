@@ -1,0 +1,46 @@
+doctype html
+html
+  include ./layouts/head.jade
+  body
+    include ./layouts/topbar.jade
+    main.main-container
+      .container
+        .row
+          .col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
+            a#new-project-config.pull-right(href='', data-toggle='modal', data-target='#configuration-modal')
+              i.fa.fa-cog.fa-3x
+            h2.form-h2= _('np_new_project')
+            hr
+            .col-md-8
+              form
+                .form-group
+                  label.form-label(for='newproject-name')= _('np_new_book_name_label')
+                  input#newproject-name.form-control.form-input(type='text')
+                .form-group
+                  label.form-label(for='newproject-description')= _('np_new_book_description_label')
+                  input#newproject-description.form-control.form-input(type='text')
+                .form-group
+                  label.form-label(for='newproject-directory')= _('np_new_book_language')
+                  select#newproject-language.form-control.form-input
+                    each val in langs
+                      option= val
+                #new-project-create.button.btn.btn-default.pull-right.create-project-button= _('np_new_book_create')
+                a(href='/').btn.btn-default.pull-right.goback-button= _('np_new_book_go_back')
+      // Advanced settings modal
+      #configuration-modal.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+        .modal-dialog.modal-lg(role='document')
+          .modal-content
+            .modal-header
+              h3#config-modal-title.modal-title= _('np_new_book_config_modal_title')
+            .modal-body
+              .row
+                .col-md-6.col-sm-6.col-xs-6
+                  section
+                    .col-md-5= _('np_new_book_config_parameter_zoom')
+                    .col-md-1
+                      input#configuration-zoom.number-input(type='number', name='quantity', min='1', max='20', value='10' )
+
+            .modal-footer
+              button#new-book-config-cancel.btn.btn-default(type='button', data-dismiss='modal')= _('np_new_book_config_cancel_button')
+              #new-book-config-apply.button.btn.btn-primary(type='button')= _('np_new_book_config_apply_button')
+    include ./layouts/footer.jade

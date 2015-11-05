@@ -1,0 +1,156 @@
+# Spanish translation.
+# MessageId standard
+#           index.jade -> i_ + id
+#           newProject.jade -> np_ + id
+#           aboutUs.jade -> au_ + id
+#           capture.jade -> c_ + id
+#           contactUs.jade -> cu_ + id
+#           outputPewview.jade -> op_ + id
+#           processingPhase.jade -> pp_ + id
+#           topbar.jade -> tb_ + id
+
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+
+# Translations for topbar.jade
+
+msgid "tb_guides"
+msgstr "Guides"
+
+msgid "tb_how_to_scan"
+msgstr "How to scan?"
+
+msgid "tb_chdk_installation"
+msgstr "CHDK Installation"
+
+msgid "tb_set_scanner"
+msgstr "How to assemble the scanner?"
+
+msgid "tb_languages"
+msgstr "Languages"
+
+msgid "tb_spanish_lang"
+msgstr "Spanish"
+
+msgid "tb_english_lang"
+msgstr "English"
+
+msgid "tb_portuguese_lang"
+msgstr "Portuguese"
+
+msgid "tb_guarani_lang"
+msgstr "Guarani"
+
+msgid "tb_contact_us"
+msgstr "Contact"
+
+msgid "tb_about_us"
+msgstr "About"
+
+# Translations for index.jade
+
+msgid "i_scan"
+msgstr "Scan"
+
+msgid "i_prev_scan"
+msgstr "Previous scans"
+
+# Translations for newProject.jade
+
+msgid "np_new_project"
+msgstr "New Project"
+
+msgid "np_new_book_name_label"
+msgstr "Book's name"
+
+msgid "np_new_book_description_label"
+msgstr "Book's description"
+
+msgid "np_new_book_language"
+msgstr "Document's language"
+
+msgid "np_new_book_create"
+msgstr "Create"
+
+msgid "np_new_book_go_back"
+msgstr "Back"
+
+msgid "np_new_book_config_modal_title"
+msgstr "Advanced configuration"
+
+msgid "np_new_book_config_parameter_zoom"
+msgstr "Zoom"
+
+msgid "np_new_book_config_apply_button"
+msgstr "Apply"
+
+msgid "np_new_book_config_cancel_button"
+msgstr "Cancel"
+
+# Translations for aboutUs.jade
+
+msgid "au_tab1_label"
+msgstr "About LibreScan"
+
+msgid "au_tab2_label"
+msgstr "Out team"
+
+msgid "au_tab3_label"
+msgstr "Get involved"
+
+msgid "au_tab1_text"
+msgstr "LibreScan is a free software tool created to ease the document scanning process"
+
+msgid "au_developers"
+msgstr "Developers"
+
+# Translations for capture.jade
+
+msgid "c_capture"
+msgstr "Capture "
+
+msgid "c_repeat"
+msgstr "Repeat "
+
+msgid "c_next"
+msgstr "Next"
+
+msgid "c_cancel"
+msgstr "Cancel"
+
+msgid "c_processing_phase"
+msgstr "Processing Phase"
+
+# Translations for outputPreview.jade
+
+msgid "op_title"
+msgstr "Preview"
+
+msgid "op_finish"
+msgstr "Finish"
+
+msgid "op_modify_captures"
+msgstr "Modificar capturas"
+
+# Translations for contactUs.jade
+msgid "cu_success_sending"
+msgstr "Success sending email"
+
+msgid "cu_title"
+msgstr "Contact us"
+
+msgid "cu_title_footer"
+msgstr "We will be grateful to receive any message or recommendation."
+
+msgid "cu_name_label"
+msgstr "Name"
+
+msgid "cu_email_label"
+msgstr "Your email"
+
+msgid "cu_message_label"
+msgstr "Message"
+
+msgid "cu_send_button"
+msgstr "Send"

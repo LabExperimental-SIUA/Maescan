@@ -2,7 +2,7 @@ import logging
 import shutil
 import pyexiv2
 import os
-from wand.image import Image
+import Image
 
 #Funcion reutilizada de autorotate.py de spreads para rotar las imagenes una vez tomadas con chdkptp.
 def autorotate_image(name, in_path, out_path):

@@ -1,0 +1,9 @@
+#pdf-preview {
+    height: 500px;
+    width: 100%;
+}
+
+.preview-btn {
+    margin-top: 10px;
+    margin-bottom: 20px;   
+}

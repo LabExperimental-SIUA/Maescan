@@ -1,0 +1,15 @@
+doctype html
+html
+    include ./layouts/head.jade
+    body
+        include ./layouts/topbar.jade
+        main.main-container
+           .container
+              .row
+                 #pdf-col.col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
+                    h2.form-h2= _('op_title')
+                    hr
+                    iframe#pdf-preview(src='/assets/data/example.pdf')
+                    a.btn.btn-default.pull-right.preview-btn(href='/')= _('op_finish')
+                    a.btn.btn-default.pull-right.goback-button.preview-btn(href='/scan')= _('op_modify_captures')
+        include ./layouts/footer.jade

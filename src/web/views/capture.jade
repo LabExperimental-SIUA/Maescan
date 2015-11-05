@@ -1,0 +1,48 @@
+doctype html
+html
+  include ./layouts/head.jade
+  body
+    include ./layouts/topbar.jade
+
+    main.main-container
+      .row.main-photo-container
+        .col-md-8.col-sm-8.col-md-offset-2.col-sm-offset-2
+          .row
+            .col-md-6.col-sm-6
+              .box-photo
+                a(href='#')
+                  img#photo1.photo(src='/assets/images/cameraWatermark.png')
+            .col-md-6.col-sm-6
+              .box-photo
+                a(href='#')
+                  img#photo2.photo(src='/assets/images/cameraWatermark.png')
+          .row
+            .col-md-6.col-sm-6
+              a(href='#')
+                .capture-btn.action-btn
+                  span= _('c_capture')
+                    i.fa.fa-camera
+            .col-md-6.col-sm-6
+              a(href='#')
+                .recapture-btn.action-btn.round
+                  span= _('c_repeat')
+                    i.fa.fa-repeat
+      a#process-btn.btn.btn-default.pull-right(href='', data-toggle='modal', data-target='#processing-modal')= _('c_next')
+      #processing-modal.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', data-backdrop="static")
+        .modal-dialog.modal-lg(role='document')
+          .modal-content
+            .modal-header
+              h3#config-modal-title.modal-title= _('c_processing_phase')
+            .modal-body
+              .row
+                .col-md-8.col-md-offset-2
+                  img#loading-book-gif(src='/assets/images/loadingBook.gif')
+            .modal-footer
+              button.btn.btn-default(type='button', data-dismiss='modal')= _('c_cancel')
+              a.btn.btn-primary.disabled(href='/outputPreview')= _('c_next')
+      #photo-modal.modal
+        .modal-dialog
+          .modal-content
+            .modal-body
+
+    include ./layouts/footer.jade

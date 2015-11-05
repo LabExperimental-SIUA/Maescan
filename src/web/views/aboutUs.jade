@@ -1,0 +1,37 @@
+doctype html
+html
+  include ./layouts/head.jade
+  body
+    include ./layouts/topbar.jade
+
+    main.main-container
+        .container.main-button-container
+            .row.main
+                .col-md-
+                    ul#myTab.nav.nav-tabs(role='tablist')
+                        li.active(role='presentation')
+                            a(href='#about', aria-controls='about', role='tab', data-toggle='tab')= _('au_tab1_label')
+                        li(role='presentation')
+                            a(href='#team', aria-controls='team', role='tab', data-toggle='tab')= _('au_tab2_label')
+                        li(role='presentation')
+                            a(href='#get-involved', aria-controls='get-involved', role='tab', data-toggle='tab')= _('au_tab3_label')
+                    .tab-content
+                        #about.tab-pane.active(role='tabpanel')
+                            p= _('au_tab1_text')
+                        #team.tab-pane(role='tabpanel')
+                            h4= _('au_developers')
+                            ul
+                                li Tony Kong Hsu
+                                li Diego Ugalde Avila
+                                li Daniel Solis Mendez
+                                li Melvin Elizondo Perez
+                        #get-involved.tab-pane(role='tabpanel')
+                            ul
+                                li
+                                    a(href='https://github.com/LabExperimental-SIUA/LibreScan')
+                                        | Github
+                                        i.fa.fa-github
+                                li
+                                    a(href='https://github.com/LabExperimental-SIUA/LibreScan') Laboratorio Experimental
+
+    include ./layouts/footer.jade

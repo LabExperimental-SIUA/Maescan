@@ -1,0 +1,31 @@
+.fa-cog {
+	color: #BFAF80;
+}
+
+#new-project-config {
+	margin-top: 15px;
+}
+
+#new-project-config:hover .fa-cog {
+	color: #D1C7AB;
+}
+
+.folder-icon {
+	color: darkslategray;
+	margin: 0 !important;
+}
+
+/*
+ * This identifier is for advance config modal
+ * in case more option can be added.
+ */
+#left-col {
+    border-right: 2px solid #A1B29B;
+}
+
+.number-input {
+    width: 84px;
+    height: 32px;
+    border-radius: 3px; 
+    border: 1px solid #CCCCCC;
+}

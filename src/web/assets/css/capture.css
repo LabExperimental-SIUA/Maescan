@@ -1,0 +1,124 @@
+#loading-percentage-gif {
+	margin-top: 100px;
+}
+
+/*
+============================
+    styles for capture
+============================    
+*/
+
+.capture-container{
+    margin-top: 20px;
+	margin-left: 20px
+}
+
+.sidebar .box{
+	height: 500px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 0 !important;
+}
+
+.box-photo {
+    text-align: center;
+    height: 250px;
+    width: 400px;
+    background-color: #F2EEB3;
+    padding-top: 10px;
+    -webkit-box-shadow: -1px 0px 17px 4px rgba(38,1,38,0.5);
+	-moz-box-shadow: -1px 0px 17px 4px rgba(38,1,38,0.5);
+	box-shadow: -1px 0px 17px 4px rgba(38,1,38,0.5);
+}
+
+.circle2 {
+    height: 180px;
+    width: 180px;
+    border-radius: 100px;
+    background-color: #8C6954;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 8em;
+    border: 3px solid #775947;
+    color: #260126;
+}
+
+.action-btn{
+    margin: 10px auto 0;
+    margin-top: 25px;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 1.8em;
+    color:white;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
+    background-color: #8C6954;
+}
+
+.capture-btn{
+    width: 300px;
+    height: 200px;	
+    border-radius: 100%;
+}
+
+.recapture-btn{
+    width: 350px;
+    height: 200px;	
+    border-bottom-right-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+.round {
+    background:
+        radial-gradient(circle at -20px 10px, rgba(0,0,0,0) 90px, #8C6954 15px),
+        radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 0px, #8C6954 0px),
+        radial-gradient(circle at 100% 0, rgba(204,0,0,0) 0px, #8C6954 0px),
+        radial-gradient(circle at -20px 90px, rgba(0,0,0,0) 90px, #8C6954 15px);
+
+    background-position: bottom left, bottom right, top right, top left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+
+}
+
+/*Thumbnail slider styles*/
+
+.thumbnail {
+	height: 80px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.thumbnail-number {
+	margin-top: 35px;
+	margin-left: 7px;
+	color: darkslategray;
+}
+
+.thumbnail-section {
+	height: 100px;
+	border: 1px solid rgba(140, 105, 84, 0.8);
+}
+
+.main-photo-container {
+	margin-top: 20px;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+
+/*
+============================
+    END of styles for capture
+============================    
+*/
+
+
+#process-btn {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}

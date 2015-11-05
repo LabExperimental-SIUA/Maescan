@@ -1,0 +1,31 @@
+doctype html
+html
+  include ./layouts/head.jade
+  body
+    include ./layouts/topbar.jade
+
+    main.main-container
+       .container.contact-info-container
+          .row
+            .col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
+              .alert.alert-success#sent_success.hidden
+                  center
+                    strong= _('cu_success_sending')
+
+            h2#contact-h2.form-h2= _('cu_title')
+            small= _('cu_title_footer')
+            hr
+
+            #contact-form
+               .form-group
+                  label= _('cu_name_label')
+                  input#form-user-name.form-control.form-input(type='text')
+               .form-group
+                  label= _('cu_email_label')
+                  input#form-user-email.form-control.form-input(type='email')
+               .form-group
+                  label= _('cu_message_label')
+                  textarea#form-user-message.form-control(rows='10')
+               button#send-mail-btn.btn.btn-default.pull-right= _('cu_send_button')
+
+    include ./layouts/footer.jade

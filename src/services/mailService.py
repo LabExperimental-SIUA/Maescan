@@ -1,17 +1,18 @@
 import smtplib
+from patterns.singleton import Singleton
 
 
-class MailService:
+class MailService(metaclass=Singleton):
 
     server = "localhost"
 
     def get_email_receiver(self):
-        return "librescan@gmail.com"
+        return "melvin.aep@hotmail.com"
 
-    #Formats the mail msg with the sender information and the body msg.
+    # Formats the mail msg with the sender information and the body msg.
     def prepare_msg(self, p_name, p_msg, p_phone, p_from):
         msg = """\
-        Enviado por: %s <%s>
+        Enviado pt: %s <%s>
         Tel: %s
         Cuerpo del mensaje: %s
         """ % (p_name, p_from, p_phone, p_msg)
@@ -20,9 +21,9 @@ class MailService:
 
     def send(self, mail):
         s = smtplib.SMTP(self.server)
-        sender = mail.sender
+        sender = mail.sender_mail
         to = self.get_email_receiver()
-        msg = self.prepare_msg(mail.name, mail.msg, mail.phone, mail.sender)
+        msg = self.prepare_msg(mail.name, mail.msg, mail.phone, mail.sender_mail)
         try:
             s.sendmail(sender, to, msg)
             print("Email was sent successfully.")
