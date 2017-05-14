@@ -18,7 +18,7 @@ class WebCorrector:
         self.init_routes()
 
     def init_routes(self):
-        self.app.route('/assets/:p_file#.+#', name='static', callback=self.return_resource)
+        self.app.route('/web/assets/:p_file#.+#', name='static', callback=self.return_resource)
         self.app.route('/pages', method="GET", callback=self.controllers['navController'].home)
         self.app.route('/images/<id>', method="GET", callback=self.controllers['imageController'].get_image)
         self.app.route('/images/last/id', method="GET", callback=self.controllers['imageController'].get_last_id)
@@ -36,12 +36,12 @@ class WebCorrector:
         return controllers
 
     def init_environment(self):
-        env = Environment(loader=FileSystemLoader(searchpath='jabiru/web/views/'),
+        env = Environment(loader=FileSystemLoader(searchpath='jabiru/src/web/views/'),
                             extensions=['pyjade.ext.jinja.PyJadeExtension'])
         return env
 
     def return_resource(self, p_file):
-        return static_file(p_file, root='jabiru/web/assets')
+        return static_file(p_file, root='jabiru/src/web/assets')
 
 
     def run_app(self):
