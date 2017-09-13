@@ -12,7 +12,7 @@ class ImageController:
     def get_image(self, p_id):
         # Variable para la ruta al directorio
         # este va a ser el path de la imagen
-        path = '/home/labexp/LibreScanProjects/L15/processed/'
+        path = environ["LS_PROJECT_PATH"]+'/processed/'
         
         l = glob.glob(path + '*.tif')
         l.sort()
@@ -35,7 +35,7 @@ class ImageController:
 
     def get_last_id(self):
         last_line = 0
-        infile = open('/home/labexp/LibreScanProjects/L15/.pics.ls', 'r')
+        infile = open(environ["LS_PROJECT_PATH"]+'/.pics.ls', 'r')
 
         for line in infile:
             last_line += 1
