@@ -1,0 +1,21 @@
+doctype html
+head
+    script(src='/assets/js/jquery-2.1.3.min.js')
+    script(src='/assets/js/webCorrector.js')
+    link(rel='stylesheet', type='text/css', href='/assets/css/webCorrector.css')
+html
+    include ./layouts/head.jade
+body
+    include ./layouts/topbar.jade
+
+    .image
+      img#page-image(src='/images/0')
+    .text
+      textarea#page-text.textBox(cols='')
+    .buttons
+      #save-btn.button: p: strong Guardar
+      #next-btn.button: p: strong Siguiente
+      #back-btn.button: p: strong Anterior
+      a#finish-btn.button(href="/outputPreview")= _('s_next')
+
+    include ./layouts/footer.jade
